@@ -12,6 +12,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path="/signup" element={<SignUp />} />
+          <Route exact path="/home" element={<Home />} />
+
         </Routes>
       </Router>
     </AppContext.Provider>
