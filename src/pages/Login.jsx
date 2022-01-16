@@ -13,7 +13,7 @@ function Login() {
       <div className="flex flex-col mt-20 mb-5 items-center">
         <div className="opacity-50 text-base">Don't have an account?</div>
         <div className="text-lg font-semibold cursor-pointer hover:underline" >
-          Create an account
+        <Link to="/signup">Create an account</Link>
         </div>
       </div>
     </div>
