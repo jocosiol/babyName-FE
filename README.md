@@ -10,7 +10,7 @@ The idea of this project is to have fun finding a Name for a baby. Where partner
 In the project directory, you can run:
 
 ```
-npm intall
+npm install
 ```
 
 To install all dependencies.
