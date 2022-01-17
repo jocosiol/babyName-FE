@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card(props) {
+function NameDetailCard(props) {
   return (
     <div class="flex justify-center">
       <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm  bg-[#99C8EC] border border-black">
@@ -23,4 +23,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default NameDetailCard;
