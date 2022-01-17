@@ -16,7 +16,7 @@ function SignUp() {
         <LeftArrow />
       </div>
       <div className="flex grow flex-col justify-center items-center mb-10">
-        <img src="https://res.cloudinary.com/imgpetapp/image/upload/c_scale,w_148/v1642320920/babyName_logo.png" />
+        <img src="https://res.cloudinary.com/imgpetapp/image/upload/c_scale,w_148/v1642320920/babyName_logo.png" alt="logo" />
         <div className="text-teal-600 text-3xl font-bold">Baby Name</div>
       </div>
       <form className="flex flex-col justify-center">
