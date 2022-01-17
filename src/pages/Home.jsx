@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import AlphabetForm from "../components/AlphabetForm";
 import NamePreference from "../components/NamePreference";
 import TopBar from "../components/TopBar";
 
@@ -47,6 +48,7 @@ function Home() {
           <label className="font-semibold">Name Preference</label>
         </div>
         {preferenceSwitcher && <NamePreference />}
+        <div><AlphabetForm /></div>
         <div></div>
       </div>
     </div>
