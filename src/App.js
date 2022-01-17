@@ -5,10 +5,13 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Favorites from "./pages/Favorites";
+import { useState } from "react";
 
 function App() {
+  const [letter, setLetter] = useState();
+  const [gender, setGender] = useState();
   return (
-    <AppContext.Provider value={{}}>
+    <AppContext.Provider value={{ letter, setLetter, gender, setGender }}>
       <Router>
         <Routes>
           <Route exact path="/" element={<Login />} />

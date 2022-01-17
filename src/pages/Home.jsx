@@ -1,13 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import AppContext from "../context/AppContext";
 import AlphabetForm from "../components/AlphabetForm";
 import NamePreference from "../components/NamePreference";
 import TopBar from "../components/TopBar";
+import NameCard from "../components/NameCard";
 
 function Home() {
+  const { letter, gender } = useContext(AppContext);
   const [preferenceSwitcher, setPreferenceSwitcher] = useState(true);
+  const [namesArray, setNamesArray] = useState([]);
 
   useEffect(() => {
-    fetch("https://baby-names-finder.p.rapidapi.com/male/z", {
+    if (!letter || !gender) return;
+
+    fetch(`https://baby-names-finder.p.rapidapi.com/${gender}/${letter}`, {
       method: "GET",
       headers: {
         "x-rapidapi-host": "baby-names-finder.p.rapidapi.com",
@@ -16,13 +22,12 @@ function Home() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.data);
+        setNamesArray(data.data);
       })
       .catch((err) => {
         console.error(err);
       });
-    return () => {};
-  });
+  }, [letter, gender]);
 
   const handleSwitcherChange = () => {
     setPreferenceSwitcher((prev) => {
@@ -48,8 +53,14 @@ function Home() {
           <label className="font-semibold">Name Preference</label>
         </div>
         {preferenceSwitcher && <NamePreference />}
-        <div><AlphabetForm /></div>
-        <div></div>
+        <div>
+          <AlphabetForm />
+        </div>
+        <div>
+          {namesArray?.map((name, index) => (
+            <NameCard key={index} name={name} />
+          ))}
+        </div>
       </div>
     </div>
   );
