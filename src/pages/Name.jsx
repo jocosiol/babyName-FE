@@ -41,12 +41,12 @@ function Name() {
         />
         <div className="flex flex-row space-x-3">
           <Link to={{ pathname: `/name/${+nameIndex - 1}` }} className="flex grow">
-            <div className="flex grow justify-center font-semibold bg-rose-300 text-slate-500 hover:bg-rose-400 hover:text-black border border-black mt-3 p-3 rounded cursor-pointer">
+            <div className="flex grow justify-center font-semibold bg-emerald-300 hover:bg-emerald-400 border border-black mt-3 p-3 rounded cursor-pointer">
               Previous
             </div>
           </Link>
           <Link to={{ pathname: `/name/${+nameIndex + 1}` }} className="flex grow">
-            <div className="flex grow justify-center font-semibold bg-rose-300 text-slate-500 hover:bg-rose-400 hover:text-black border border-black mt-3 p-3 rounded cursor-pointer">
+            <div className="flex grow justify-center font-semibold bg-emerald-300 hover:bg-emerald-400 border border-black mt-3 p-3 rounded cursor-pointer">
               Next
             </div>
           </Link>
