@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function LetterButton(props) {
-    return (
-        <div className="flex grow border border-black p-2">
-            {props.letter}
-        </div>
-    )
+  return (
+    <div className="flex grow p-2 font-semibold hover:bg-purple-400 cursor-pointer">
+      {props.letter}
+    </div>
+  );
 }
 
-export default LetterButton
+export default LetterButton;
