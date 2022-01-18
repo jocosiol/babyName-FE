@@ -6,9 +6,8 @@ import TopBar from "../components/TopBar";
 import NameCard from "../components/NameCard";
 
 function Home() {
-  const { letter, gender } = useContext(AppContext);
+  const { letter, gender, namesArray, setNamesArray } = useContext(AppContext);
   const [preferenceSwitcher, setPreferenceSwitcher] = useState(true);
-  const [namesArray, setNamesArray] = useState([]);
 
   useEffect(() => {
     if (!letter || !gender) return;
@@ -58,7 +57,7 @@ function Home() {
         </div>
         <div>
           {namesArray?.map((name, index) => (
-            <NameCard key={index} name={name} />
+            <NameCard key={index} name={name} index={index} />
           ))}
         </div>
       </div>

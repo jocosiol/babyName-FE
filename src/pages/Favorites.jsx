@@ -9,7 +9,7 @@ function Favorites() {
         <TopBar name="Favorites" />
         <div className="flex flex-col justify-center items-center mt-5">
           <label className="flex  ">There is a match!</label>
-          <NameCard></NameCard>
+          <NameCard name={"Name of person"}></NameCard>
         </div>
 
         <div className="flex flex-col justify-center items-center mt-5">
