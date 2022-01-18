@@ -39,7 +39,7 @@ function AlphabetForm() {
 
   return (
     <div
-      className="flex flex-row bg-purple-300 justify-center flex-wrap border border-black rounded-lg my-5 p-3 font-Montserrat"
+      className="flex flex-row bg-purple-300 justify-center flex-wrap border border-black rounded-lg my-5 p-3 font-Montserrat text-xl"
       onClick={handleClick}
     >
       {alphabet.map((item, index) => (

@@ -49,7 +49,7 @@ function Name() {
 
   return (
     <div className="min-h-screen bg-yellow-200 flex flex-col font-Montserrat">
-      <div className="flex flex-col my-5 mx-3">
+      <div className="flex flex-col my-5 mx-5">
         <TopBar name="Name" />
         <NameDetailCard name={selectedNameDetail?.name} gender={selectedNameDetail?.gender} meaning={selectedNameDetail?.meaning} />
         <div className="flex flex-row space-x-3">
