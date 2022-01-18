@@ -4,9 +4,11 @@ import AlphabetForm from "../components/AlphabetForm";
 import NamePreference from "../components/NamePreference";
 import TopBar from "../components/TopBar";
 import NameCard from "../components/NameCard";
+import NavBar from "../components/NavBar";
 
 function Home() {
-  const { letter, gender, namesArray, setNamesArray } = useContext(AppContext);
+  const { letter, gender, namesArray, setNamesArray, isNavbarOn } =
+    useContext(AppContext);
   const [preferenceSwitcher, setPreferenceSwitcher] = useState(true);
 
   useEffect(() => {
@@ -35,7 +37,8 @@ function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-yellow-200 flex flex-col font-Montserrat">
+    <div className=" min-h-screen bg-yellow-200 flex flex-col font-Montserrat">
+      {isNavbarOn && <NavBar />}
       <div className="my-5 mx-3">
         <TopBar name="Names" />
         <div className="flex flex-row justify-center mx-10 mt-5">

@@ -13,9 +13,10 @@ function App() {
   const [gender, setGender] = useState();
   const [selectedName, setSelectedName] = useState();
   const [selectedKey, setSelectedKey] = useState();
-
+  const [isNavbarOn, setIsNavbarOn] = useState(false);
   const [namesArray, setNamesArray] = useState([]);
   const [nameToFav, setNameToFav] = useState([]);
+
   console.log(nameToFav, "selected name from app.js");
 
   return (
@@ -33,13 +34,15 @@ function App() {
         setSelectedKey,
         setNameToFav,
         nameToFav,
+        isNavbarOn,
+        setIsNavbarOn,
       }}
     >
       <Router>
         <Routes>
-          <Route exact path="/" element={<Login />} />
+          <Route exact path="/login" element={<Login />} />
           <Route exact path="/signup" element={<SignUp />} />
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route exact path="/favorites" element={<Favorites />} />
           <Route exact path="/name/:value" element={<Name />} />
         </Routes>
