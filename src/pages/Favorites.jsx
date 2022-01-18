@@ -16,9 +16,10 @@ function Favorites() {
         <div className="flex flex-col mt-5 text-lg font-semibold">There is a match!</div>
         <NameCard name={"Name of person"} />
 
-        <div className="flex flex-col justify-center items-center mt-5">
-          {nameToFav.map(() => {
-            <NameCard></NameCard>;
+        <div className="flex flex-col mt-5 text-lg font-semibold">
+          My favorites names
+          {nameToFav.map((value) => {
+            return <NameCard name={value}></NameCard>;
           })}
         </div>
       </div>
