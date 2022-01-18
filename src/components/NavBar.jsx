@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import AppContext from "../context/AppContext";
-import Bars from "../icons/Bars";
+import Close from "../icons/Close";
 
 function NavBar() {
   const { setIsNavbarOn } = useContext(AppContext);
@@ -18,7 +18,7 @@ function NavBar() {
               });
             }}
           >
-            <Bars />
+            <Close />
           </div>
           <div className="text-lg font-semibold">Hi User!</div>
         </div>
