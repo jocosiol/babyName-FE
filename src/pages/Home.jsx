@@ -37,9 +37,9 @@ function Home() {
   };
 
   return (
-    <div className=" min-h-screen bg-yellow-200 flex flex-col font-Montserrat">
+    <div className="min-h-screen bg-yellow-200 flex flex-col font-Montserrat">
       {isNavbarOn && <NavBar />}
-      <div className="my-5 mx-3">
+      <div className="my-5 mx-5">
         <TopBar name="Names" />
         <div className="flex flex-row justify-center mx-10 mt-5">
           <div className="form-check form-switch">
