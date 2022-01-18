@@ -15,6 +15,8 @@ function App() {
   const [selectedKey, setSelectedKey] = useState();
 
   const [namesArray, setNamesArray] = useState([]);
+  const [nameToFav, setNameToFav] = useState([]);
+  console.log(nameToFav, "selected name from app.js");
 
   return (
     <AppContext.Provider
@@ -29,6 +31,8 @@ function App() {
         setNamesArray,
         selectedKey,
         setSelectedKey,
+        setNameToFav,
+        nameToFav,
       }}
     >
       <Router>

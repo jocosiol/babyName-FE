@@ -16,7 +16,7 @@ function Home() {
       method: "GET",
       headers: {
         "x-rapidapi-host": "baby-names-finder.p.rapidapi.com",
-        "x-rapidapi-key": process.env.REACT_APP_API_KEY,
+        "x-rapidapi-key": "a0db223fc8mshda5ea900046c62dp1a22d8jsne3d9e0905d48",
       },
     })
       .then((response) => response.json())
