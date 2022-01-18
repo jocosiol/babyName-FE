@@ -6,7 +6,7 @@ import NavBar from "../components/NavBar";
 
 function Favorites() {
   const { isNavbarOn, nameToFav } = useContext(AppContext);
-  console.log(nameToFav, "here is the value of name to fav here");
+
   return (
     <div className="min-h-screen bg-yellow-200 flex flex-col font-Montserrat">
       {isNavbarOn && <NavBar />}
@@ -18,9 +18,7 @@ function Favorites() {
 
         <div className="flex flex-col mt-5 text-lg font-semibold">
           My favorites names
-          {nameToFav.map((value) => {
-            return <NameCard name={value}></NameCard>;
-          })}
+          {}
         </div>
       </div>
     </div>

@@ -14,7 +14,9 @@ function Name() {
   const [isNextDisable, setIsNextDisable] = useState(false);
 
   function addNameToFav() {
-    setNameToFav((prevArray) => [...prevArray, nameToStore]);
+    // setNameToFav((prevArray) => [...prevArray, nameToStore]);
+    setNameToFav((prevArray) => new Set([...prevArray, nameToStore]));
+    // setState(previousState => new Set([...state, foo]))
   }
 
   useEffect(() => {

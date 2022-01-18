@@ -15,7 +15,7 @@ function App() {
   const [selectedKey, setSelectedKey] = useState();
   const [isNavbarOn, setIsNavbarOn] = useState(false);
   const [namesArray, setNamesArray] = useState([]);
-  const [nameToFav, setNameToFav] = useState([]);
+  const [nameToFav, setNameToFav] = useState(new Set());
 
   console.log(nameToFav, "selected name from app.js");
 
