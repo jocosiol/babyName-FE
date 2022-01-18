@@ -8,7 +8,9 @@ function Name() {
   const { selectedName, namesArray } = useContext(AppContext);
   const [selectedNameDetail, setSelectedNameDetail] = useState();
   let params = useParams();
-  const nameIndex = params.value;
+  const nameIndex = +params.value;
+  const [isPrevDisable, setIsPrevDisable] = useState(false);
+  const [isNextDisable, setIsNextDisable] = useState(false);
 
   useEffect(() => {
     fetch(
@@ -28,7 +30,19 @@ function Name() {
       .catch((err) => {
         console.error(err);
       });
-  }, [selectedName, nameIndex]);
+
+    if (nameIndex === 0) {
+      setIsPrevDisable(true);
+    } else {
+      setIsPrevDisable(false);
+    }
+
+    if (nameIndex === namesArray.length - 1) {
+      setIsNextDisable(true);
+    } else {
+      setIsNextDisable(false);
+    }
+  }, [selectedName, nameIndex, namesArray]);
 
   return (
     <div className="min-h-screen bg-yellow-200 flex flex-col font-Montserrat">
@@ -40,15 +54,35 @@ function Name() {
           meaning={selectedNameDetail?.meaning}
         />
         <div className="flex flex-row space-x-3">
-          <Link to={{ pathname: `/name/${+nameIndex - 1}` }} className="flex grow">
-            <div className="flex grow justify-center font-semibold bg-emerald-300 hover:bg-emerald-400 border border-black mt-3 p-3 rounded cursor-pointer">
+          <Link
+            to={{ pathname: `/name/${+nameIndex - 1}` }}
+            className="flex grow"
+          >
+            <button
+              disabled={isPrevDisable}
+              className={`flex grow justify-center font-semibold bg-emerald-300 border border-black mt-3 p-3 rounded  ${
+                isPrevDisable
+                  ? "opacity-60"
+                  : "hover:bg-emerald-400 cursor-pointer"
+              }`}
+            >
               Previous
-            </div>
+            </button>
           </Link>
-          <Link to={{ pathname: `/name/${+nameIndex + 1}` }} className="flex grow">
-            <div className="flex grow justify-center font-semibold bg-emerald-300 hover:bg-emerald-400 border border-black mt-3 p-3 rounded cursor-pointer">
+          <Link
+            to={{ pathname: `/name/${+nameIndex + 1}` }}
+            className="flex grow"
+          >
+            <button
+              disabled={isNextDisable}
+              className={`flex grow justify-center font-semibold bg-emerald-300 border border-black mt-3 p-3 rounded  ${
+                isNextDisable
+                  ? "opacity-60"
+                  : "hover:bg-emerald-400 cursor-pointer"
+              }`}
+            >
               Next
-            </div>
+            </button>
           </Link>
         </div>
 
