@@ -20,7 +20,7 @@ function NamePreference() {
         </select>
       </div>
 
-      <div className="w-64 mt-3">
+      {/* <div className="w-64 mt-3">
         <select
           className="appearance-none w-full bg-white border border-black px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline"
           defaultValue="title"
@@ -29,7 +29,7 @@ function NamePreference() {
           <option value="english">English</option>
           <option value="asian">Asian</option>
         </select>
-      </div>
+      </div> */}
     </div>
   );
 }
