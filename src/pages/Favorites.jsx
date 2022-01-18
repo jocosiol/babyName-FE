@@ -18,7 +18,11 @@ function Favorites() {
 
         <div className="flex flex-col mt-5 text-lg font-semibold">
           My favorites names
-          {}
+        </div>
+        <div>
+          {[...nameToFav]?.map((name, index) => (
+            <NameCard key={index} name={name} index={index} favorited={true} />
+          ))}
         </div>
       </div>
     </div>
