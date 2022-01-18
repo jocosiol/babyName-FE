@@ -19,7 +19,7 @@ function LoginForm() {
         ></input>
       </div>
       <div className="flex justify-center mt-20">
-        <Link to="/home">
+        <Link to="/">
           <div className="bg-emerald-400 hover:bg-emerald-300 cursor-pointer py-3 px-20 rounded-full text-slate-800 font-semibold">
             Log in
           </div>

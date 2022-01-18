@@ -89,7 +89,7 @@ function Name() {
         <div className="flex grow justify-center font-semibold bg-red-500 hover:bg-red-600 border border-black mt-3 p-3 rounded cursor-pointer">
           Love it!
         </div>
-        <Link to="/home">
+        <Link to="/">
           <div className="flex grow justify-center font-semibold bg-emerald-300 hover:bg-emerald-400  border border-black mt-3 p-3 rounded cursor-pointer">
             Back
           </div>
