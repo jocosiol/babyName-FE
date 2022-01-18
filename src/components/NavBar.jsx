@@ -8,7 +8,7 @@ function NavBar() {
 
   return (
     <div className="absolute top-0 left-0">
-      <div className="flex flex-col w-60 h-screen px-3 py-5 bg-white border-r dark:bg-gray-800 dark:border-gray-600 font-Montserrat text-white">
+      <div className="flex flex-col w-60 h-screen px-3 py-5 bg-gray-800 border-gray-600 font-Montserrat text-white">
         <div className="flex flex-row space-x-7">
           <div
             className="w-5 h-5 cursor-pointer"
