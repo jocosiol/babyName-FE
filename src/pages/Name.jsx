@@ -5,7 +5,7 @@ import TopBar from "../components/TopBar";
 import { Link, useParams } from "react-router-dom";
 
 function Name() {
-  const { selectedName, namesArray, setNameToFav, nameToFav } = useContext(AppContext);
+  const { selectedName, namesArray, setNameToFav } = useContext(AppContext);
   const [nameToStore, setNameToStore] = useState();
   const [selectedNameDetail, setSelectedNameDetail] = useState();
   let params = useParams();
