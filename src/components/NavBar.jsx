@@ -31,9 +31,10 @@ function NavBar() {
           </Link>
         </div>
         <div className="grow flex flex-col justify-end">
-          <div className="hover:underline cursor-pointer">
+          <div className="hover:underline cursor-pointer mb-4">
             Connect to partner
           </div>
+          <div className="hover:font-semibold cursor-pointer">Log Out</div>
         </div>
       </div>
     </div>
