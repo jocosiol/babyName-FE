@@ -5,9 +5,11 @@
 The idea of this project is to have fun finding a Name for a baby. Where partners could play finding which names they like and the app will notify all the names that matches with the partner's. 
 
 ## Screenshots
-![screenshot1](https://res.cloudinary.com/imgpetapp/image/upload/v1642517877/Screen_Shot_2022-01-18_at_16.55.39_ousjbq.png)
-![screenshot2](https://res.cloudinary.com/imgpetapp/image/upload/v1642517877/Screen_Shot_2022-01-18_at_16.55.53_samda1.png)
-![screenshot3](https://res.cloudinary.com/imgpetapp/image/upload/v1642517877/Screen_Shot_2022-01-18_at_16.56.03_mgvkdf.png)
+![screenshot1](https://res.cloudinary.com/imgpetapp/image/upload/c_thumb,w_200,g_face/v1642622095/WhatsApp_Image_2022-01-19_at_9.52.32_PM_6_vuadzi.jpg)
+![screenshot2](https://res.cloudinary.com/imgpetapp/image/upload/c_thumb,w_200,g_face/v1642622096/WhatsApp_Image_2022-01-19_at_9.52.32_PM_4_squufn.jpg)
+![screenshot3](https://res.cloudinary.com/imgpetapp/image/upload/c_thumb,w_200,g_face/v1642622096/WhatsApp_Image_2022-01-19_at_9.52.32_PM_5_mefvvu.jpg)
+![screenshot4](https://res.cloudinary.com/imgpetapp/image/upload/c_thumb,w_200,g_face/v1642622096/WhatsApp_Image_2022-01-19_at_9.52.32_PM_3_qvwiwl.jpg)
+![screenshot5](https://res.cloudinary.com/imgpetapp/image/upload/c_thumb,w_200,g_face/v1642622096/WhatsApp_Image_2022-01-19_at_9.52.32_PM_coyp02.jpg)
 
 ## How to run
 
