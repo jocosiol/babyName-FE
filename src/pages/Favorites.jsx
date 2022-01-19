@@ -14,7 +14,7 @@ function Favorites() {
         <TopBar name="Favorites" />
 
         <div className="flex flex-col mt-5 text-lg font-semibold">There is a match!</div>
-        <NameCard name={"Name of person"} />
+        <NameCard name={"Abraham"} matched={true} />
 
         <div className="flex flex-col mt-5 text-lg font-semibold">
           My favorites names

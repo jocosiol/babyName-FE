@@ -9,6 +9,7 @@ function NameCard(props) {
     setSelectedName(props.name);
     setSelectedKey(props.index);
   };
+  
 
   return (
     <>
