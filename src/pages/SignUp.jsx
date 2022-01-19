@@ -40,6 +40,10 @@ function SignUp() {
     } else setPassError(false);
   }, [newUser]);
 
+  const handleSignUp = () => {
+
+  }
+
   return (
     <div className="min-h-screen bg-yellow-200 py-6 flex flex-col justify-center font-Montserrat">
       <div className="w-5 h-5 mx-10 mt-1 ">
@@ -133,7 +137,7 @@ function SignUp() {
         )}
 
         <div className="flex justify-center mt-20">
-          <button className="bg-emerald-400 hover:bg-emerald-300 cursor-pointer py-3 px-20 rounded-full text-slate-800 font-semibold">
+          <button onClick={handleSignUp} className="bg-emerald-400 hover:bg-emerald-300 cursor-pointer py-3 px-20 rounded-full text-slate-800 font-semibold">
             Sign up
           </button>
         </div>
