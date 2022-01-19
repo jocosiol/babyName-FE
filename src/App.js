@@ -1,12 +1,28 @@
 import "./App.css";
 import AppContext from "./context/AppContext";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Favorites from "./pages/Favorites";
 import { useState } from "react";
 import Name from "./pages/Name";
+
+// const isLogin = () => {
+//   if (localStorage.getItem("token")) {
+//     return true;
+//   } else return false;
+// };
+
+// const PrivateRoute = ({component: Component, ...rest}) => {
+//   return (
+//       <Route {...rest} render={props => (
+//           isLogin() ?
+//               <Component {...props} />
+//           : <Navigate to={"/login"} />
+//       )} />
+//   );
+// };
 
 function App() {
   const [letter, setLetter] = useState();
