@@ -2,7 +2,9 @@
 
 ![logo](https://res.cloudinary.com/imgpetapp/image/upload/c_scale,w_148/v1642320920/babyName_logo.png)
 
-The idea of this project is to have fun finding a Name for a baby. Where partners could play finding which names they like and the app will notify all the names that matches with the partner's. 
+The idea of this project is to have fun finding a Name for a baby. Where partners could play finding which names they like and the app will notify all the names that matches with the partner's.
+
+Group: Jessica Sandberg Waldmann, Marcela Jarovsky, Matias Ogorinsky, Moshe Cosio.
 
 ## Screenshots
 ![screenshot1](https://res.cloudinary.com/imgpetapp/image/upload/c_thumb,w_200,g_face/v1642622095/WhatsApp_Image_2022-01-19_at_9.52.32_PM_6_vuadzi.jpg)
