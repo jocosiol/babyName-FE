@@ -20,7 +20,7 @@ function NavBar() {
           >
             <Close />
           </div>
-          <div className="text-lg font-semibold">Hi User!</div>
+          <div className="text-lg font-semibold">Hi Moshe!</div>
         </div>
         <div className="flex flex-col space-y-3 mt-8 text-l">
           <Link to="/">
@@ -34,7 +34,9 @@ function NavBar() {
           <div className="hover:underline cursor-pointer mb-4">
             Connect to partner
           </div>
+          <Link to="/login">
           <div className="hover:font-semibold cursor-pointer">Log Out</div>
+          </Link>
         </div>
       </div>
     </div>

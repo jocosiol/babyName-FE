@@ -8,6 +8,7 @@ function Login() {
   const [password, setPassword] = useState();
 
   return (
+
     <LoginContext.Provider value={(userName, setUserName, password, setPassword)}>
       <div className="min-h-screen bg-yellow-200 flex flex-col justify-center font-Montserrat">
         <div className="flex grow flex-col items-center justify-center mb-20">
@@ -20,6 +21,7 @@ function Login() {
           <div className="text-lg font-semibold cursor-pointer hover:underline">
             <Link to="/signup">Create an account</Link>
           </div>
+
         </div>
       </div>
     </LoginContext.Provider>
