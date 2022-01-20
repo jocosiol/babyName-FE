@@ -7,7 +7,7 @@ function Login() {
     <div className="min-h-screen bg-yellow-200 flex flex-col justify-center font-Montserrat">
       <div className="flex grow flex-col items-center justify-center mb-20">
         <img src="https://res.cloudinary.com/imgpetapp/image/upload/c_scale,w_148/v1642320920/babyName_logo.png" />
-        <div className="text-teal-600 text-3xl font-bold">Baby Name</div>
+        <div className="text-teal-600 text-3xl font-bold">Name-atch</div>
       </div>
       <LoginForm />
       <div className="flex flex-col mt-20 mb-5 items-center">

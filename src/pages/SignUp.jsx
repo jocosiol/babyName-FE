@@ -56,7 +56,7 @@ function SignUp() {
           src="https://res.cloudinary.com/imgpetapp/image/upload/c_scale,w_148/v1642320920/babyName_logo.png"
           alt="logo"
         />
-        <div className="text-teal-600 text-3xl font-bold">Baby Name</div>
+        <div className="text-teal-600 text-3xl font-bold">Name-ache</div>
       </div>
       <form className="flex flex-col justify-center">
         <div className="flex flex-col border-b border-black mx-10 mt-5">
